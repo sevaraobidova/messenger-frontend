@@ -13,10 +13,13 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        lg: "1024px",
       },
     },
     extend: {
+      maxWidth: {
+        container: "1024px",
+      },
       colors: {
         primary: "rgba(var(--primary-color))",
         secondary: "rgba(var(--secondary-blue))",
@@ -26,6 +29,7 @@ module.exports = {
         green: "rgba(var(--state-green))",
         warning: "rgba(var(--state-warning))",
         error: "rgba(var(--state-error))",
+        login: "rgba(var(--login))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -40,6 +44,7 @@ module.exports = {
       },
       fontFamily: {
         gilroy: ["Gilroy", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       fontWeight: {
         thin: 100,

@@ -1,7 +1,14 @@
-import MyButton from "./components/global/button/Button";
+import { Button } from "./components/ui/button";
 
 function App() {
-  return <MyButton type="submit">Hello</MyButton>;
+  return (
+    <div className="container">
+      <Button variant="create">Create new account</Button>
+      <Button variant="login">Log in</Button>
+      <Button variant="forget">Forgot Password?</Button>
+      <Button variant="default">Turn on</Button>
+    </div>
+  );
 }
 
 export default App;
