@@ -1,12 +1,11 @@
-import { Button } from "./components/ui/button";
+import Login from "./components/global/authentication/Login";
+import Register from "./components/global/authentication/Register";
 
 function App() {
   return (
     <div className="container">
-      <Button variant="create">Create new account</Button>
-      <Button variant="login">Log in</Button>
-      <Button variant="forget">Forgot Password?</Button>
-      <Button variant="default">Turn on</Button>
+      <Login />
+      <Register />
     </div>
   );
 }
